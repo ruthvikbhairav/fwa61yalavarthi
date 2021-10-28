@@ -12,8 +12,8 @@ router.get('/', function (req, res, next) {
   if (storeValue == 0)
     storeValue = Math.random()
   res.write("Computes the values for Math.hypot and math.ceil function." + "\n")
-  res.write('Math.cos applied to ' + storeValue + " is " + Math.cos()(storeValue) + "\n");
-  res.end('Math.asin applied to ' + storeValue + " is " + Math.asin()(storeValue));
+  res.write('Math.cos applied to ' + storeValue + " is " + Math.cos(storeValue) + "\n");
+  res.end('Math.asin applied to ' + storeValue + " is " + Math.asin(storeValue));
 });
 
 module.exports = router;
